@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Sidenav from './components/Sidenav'
+import Main from './components/main'
 
 function App() {
 
@@ -8,10 +9,11 @@ function App() {
   
       <div>
         <Sidenav />
+        <Main />
 
 
       </div>
   )
 }
 
-export default App;
+export default App
