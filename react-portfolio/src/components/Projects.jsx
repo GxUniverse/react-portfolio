@@ -18,12 +18,14 @@ const data = [
       {
         year: 'Weather App',
         title: 'Lead Developer',
-        details: 'Build and develop a full-stack custom weather application that allows you to search and check the humidity, temperature, and wind speed of any city.'
+        details: 'Build and develop a full-stack custom weather application that allows you to search and check the humidity, temperature, and wind speed of any city.',
+        link: 'https://gxuniverse.github.io/week-6-weather-dashboard/'
       },
       {
         year: 'Movie Review Database & Application',
         title: 'Lead Developer',
-        details: 'Build and develop a full-stack custom movie review application that allows you to see the review of any film from the IMDB database.'
+        details: 'Build and develop a full-stack custom movie review application that allows you to see the review of any film from the IMDB database.',
+        link: 'https://hunterwilliam795.github.io/First-Project/'
       },
   ];
 

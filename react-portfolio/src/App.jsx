@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Maine from './components/maine'
 import Projects from './components/Projects'
 import Footer from './components/footer'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Maine />
         <Projects />
+        <Contact />
         <Footer />
         
 
