@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidenav from './components/Sidenav'
-import Main from './components/main'
+import Maine from './components/maine'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   
       <div>
         <Sidenav />
-        <Main />
+        <Maine />
 
 
       </div>
