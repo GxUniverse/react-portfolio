@@ -11,7 +11,7 @@ const Maine = () => {
         alt="/"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
-      <div className='max-w-[700] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
+      <div className='max-w-[700] m-auto h-full w-full flex flex-col justify-center lg:items-center items-center'>
         <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>I'm Manin Gauba</h1>
         <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
           I'm 
