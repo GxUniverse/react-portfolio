@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Maine from './components/maine'
 import Projects from './components/Projects'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import Contact from './components/Contact'
 
 function App() {
