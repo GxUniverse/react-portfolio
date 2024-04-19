@@ -1,5 +1,3 @@
-// Projects.jsx
-
 import React from "react";
 import ProjectItem from './ProjectItem';
 
@@ -32,25 +30,28 @@ const data = [
 const Projects = () => {
   return (
     <div id='project' className='md:pl-20 p-4 py-16'>
-      <div className="max-w-[1040px] m-auto relative" style={{ backgroundColor: '#e4d5f7' }}>
+      <div className="max-w-[1040px] m-auto relative">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
           <ellipse cx="50" cy="50" rx="50" ry="30" fill="#e4d5f7" />
         </svg>
         <div style={{ position: 'relative', zIndex: 1 }}>
-          <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Experience</h1>
+          <div className="card bg-white rounded-lg p-4 mb-4" style={{ width: '100%' }}>
+            <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Experience</h1>
+          </div>
           {data.map((item, idx) => (
-            <ProjectItem
-              key={idx}
-              year={item.year}
-              title={item.title}
-              duration={item.duration}
-              details={item.details}
-              link={item.link}
-              showEventsLink={item.showEventsLink}
-              showCartoonLink={item.showCartoonLink}
-              showGraphicNovelLink={item.showGraphicNovelLink}
-              showARGameLink={item.showARGameLink}
-            />
+            <div key={idx} className="card bg-white rounded-lg p-4 mb-4" style={{ width: '100%' }}>
+              <ProjectItem
+                year={item.year}
+                title={item.title}
+                duration={item.duration}
+                details={item.details}
+                link={item.link}
+                showEventsLink={item.showEventsLink}
+                showCartoonLink={item.showCartoonLink}
+                showGraphicNovelLink={item.showGraphicNovelLink}
+                showARGameLink={item.showARGameLink}
+              />
+            </div>
           ))}
         </div>
       </div>

@@ -20,7 +20,7 @@ const Maine = () => {
                 // Same substring at the start will only be typed out once, initially
                 "a Project Manager",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "a Developer",
+                "a Full-Stack Developer",
                 1000,
                 "a Coder",
                 1000,
