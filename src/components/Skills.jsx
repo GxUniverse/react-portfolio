@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// skills to add
-
 const Skills = () => {
   const skills = [
     { name: "HTML", percentage: 90 },

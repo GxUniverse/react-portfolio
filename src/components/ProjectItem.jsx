@@ -1,5 +1,3 @@
-// ProjectItem.jsx
-
 import React from 'react';
 
 const ProjectItem = ({ year, title, duration, details, link, showEventsLink, showCartoonLink, showGraphicNovelLink, showARGameLink }) => {
