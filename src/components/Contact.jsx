@@ -29,6 +29,15 @@ const Contact = () => {
                     <p className='text-center text-gray-800'>manindgauba@gmail.com</p>
                 </div>
             </div>
+            <div className='flex flex-col items-center border border-gray-300 rounded-lg'>
+                <div className='bg-[#001b5e] w-full py-2 rounded-b-lg'>
+                    <label className='uppercase text-sm mb-2 text-white font-semibold'>Github</label>
+                </div>
+                <div className="p-4"> <a href='https://github.com/GxUniverse' target='_blank'>
+                    <p className='text-center text-gray-800'>www.github.com/GxUniverse</p>
+                   </a>
+                </div>
+            </div>
         </div>
     </div>
   )
