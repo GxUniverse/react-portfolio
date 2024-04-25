@@ -15,7 +15,9 @@ const data = [
     title: 'Employed at The Gx Universe',
     duration: '4 years',
     details: 'Created and managed content and Brand representation across various social media platforms. Organized events and created promotional materials. Developed custom interactive rollouts and generated funding for future projects including: digital and physical art, gaming, performances and interactive experiences',
+    CartoonLink: 'https://vimeo.com/938857371?share=copy',
     showCartoonLink: true, // The Gx Universe should have the show links for cartoon, graphic novel, and AR game
+    GraphicNovelLink: 'https://objkt.com/tokens/KT1H2uPAdEwDUrhgpTry8YSCiNGX2PWwNV1y/6',
     showGraphicNovelLink: true,
     showARGameLink: true
   },
@@ -48,8 +50,11 @@ const Projects = () => {
                 link={item.link}
                 showEventsLink={item.showEventsLink}
                 showCartoonLink={item.showCartoonLink}
+                CartoonLink={item.CartoonLink} // Pass CartoonLink here
                 showGraphicNovelLink={item.showGraphicNovelLink}
+                GraphicNovelLink={item.GraphicNovelLink} // Pass GraphicNovelLink here
                 showARGameLink={item.showARGameLink}
+                ARGameLink={item.ARGameLink} // Pass ARGameLink here
               />
             </div>
           ))}
@@ -60,3 +65,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

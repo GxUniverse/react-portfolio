@@ -9,7 +9,7 @@ const data = [
     year: 'Movie Review Application',
     title: 'Lead Developer',
     details: 'Full-stack custom movie review application that allows you to see the review of any film from the IMDB database.',
-    link: 'https://example.com/movie_review_app_image.jpg', // Replace with actual image URL
+    link: 'https://hunterwilliam795.github.io/First-Project/', // Replace with actual image URL
     image: screenshot2Image
   },
   {
@@ -32,12 +32,16 @@ const data = [
 const Portfolio = () => {
   const [startIndex, setStartIndex] = useState(0);
 
+  const isMobile = window.innerWidth <= 768; // Adjust this breakpoint as needed
+
+  const itemsPerPage = isMobile ? 2 : 3;
+
   const goToNextSet = () => {
-    setStartIndex(startIndex + 3 >= data.length ? 0 : startIndex + 3);
+    setStartIndex(startIndex + itemsPerPage >= data.length ? 0 : startIndex + itemsPerPage);
   };
 
   const goToPreviousSet = () => {
-    setStartIndex(startIndex - 3 < 0 ? data.length - 3 : startIndex - 3);
+    setStartIndex(startIndex - itemsPerPage < 0 ? data.length - itemsPerPage : startIndex - itemsPerPage);
   };
 
   return (
@@ -55,7 +59,7 @@ const Portfolio = () => {
               &lt;
             </button>
             <div className="flex flex-1 justify-center">
-              {data.slice(startIndex, startIndex + 3).map((item, index) => (
+              {data.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
                 <div key={index} className="card bg-white rounded-lg p-4 mb-4">
                   <PortfolioItem
                     year={item.year}

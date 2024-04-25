@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Maine from './components/Maine';
+import Maine from './components/maine';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';

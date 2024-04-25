@@ -18,20 +18,34 @@ const Skills = () => {
 
   const [startIndex, setStartIndex] = useState(0);
 
+  const isMobile = window.innerWidth <= 768; // Adjust this breakpoint as needed
+
+  const skillsPerPage = isMobile ? 2 : 6;
+
   const nextSkills = () => {
-    setStartIndex((prevIndex) => (prevIndex + 6 < skills.length ? prevIndex + 6 : 0));
+    setStartIndex((prevIndex) =>
+      prevIndex + skillsPerPage < skills.length
+        ? prevIndex + skillsPerPage
+        : 0
+    );
   };
 
   const prevSkills = () => {
-    setStartIndex((prevIndex) => (prevIndex - 6 >= 0 ? prevIndex - 6 : skills.length - 6));
+    setStartIndex((prevIndex) =>
+      prevIndex - skillsPerPage >= 0
+        ? prevIndex - skillsPerPage
+        : skills.length - skillsPerPage
+    );
   };
 
   return (
     <div className="bg-[#e4d5f7] p-8">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-8">Skills</h1>
-      <div className="flex justify-around">
-        {skills.slice(startIndex, startIndex + 6).map((skill, index) => (
-          <div key={index} className="relative flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-8">
+        Skills
+      </h1>
+      <div className="flex justify-around flex-wrap">
+        {skills.slice(startIndex, startIndex + skillsPerPage).map((skill, index) => (
+          <div key={index} className="relative flex flex-col items-center mb-4">
             <div className="w-24 h-24 relative">
               <div
                 className="w-full h-full bg-white rounded-full overflow-hidden relative"
@@ -42,7 +56,8 @@ const Skills = () => {
                 <div
                   className="absolute bottom-0 left-0 w-full h-full"
                   style={{
-                    backgroundImage: `linear-gradient(to top, transparent ${100 - skill.percentage}%, #ff80df ${100 - skill.percentage}%)`,
+                    backgroundImage: `linear-gradient(to top, transparent ${100 -
+                      skill.percentage}%, #ff80df ${100 - skill.percentage}%)`,
                   }}
                 ></div>
                 <p className="absolute inset-0 flex items-center justify-center text-lg font-bold text-black">
@@ -55,8 +70,12 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex justify-center mt-4">
-        <button onClick={prevSkills} className="mr-4 p-2 bg-white rounded-full">&lt;</button>
-        <button onClick={nextSkills} className="p-2 bg-white rounded-full">&gt;</button>
+        <button onClick={prevSkills} className="mr-4 p-2 bg-white rounded-full">
+          &lt;
+        </button>
+        <button onClick={nextSkills} className="p-2 bg-white rounded-full">
+          &gt;
+        </button>
       </div>
     </div>
   );
