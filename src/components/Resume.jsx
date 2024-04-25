@@ -30,7 +30,7 @@ function Resume() {
       <section id="home-page-body" className="flex justify-center mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-xl font-semibold mb-4 text-blue-500">Font-End Tech</p>
+            <p className="text-xl font-semibold mb-4 text-blue-500">Front-End Tech</p>
             <ul className="text-gray-700">
             <li className="flex items-center mb-2">
                 <MdFoundation className="text-blue-500 mr-2" />
