@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Resume = () => {
-  const resumeFilePath = '/react-portfolio/public/maninGaubaDevRESUME(CC).pdf'; // Replace with your actual resume file path
+  const resumeFilePath = '/maninGaubaDevRESUME(CC).pdf'; // Replace with your actual resume file path
 
   return (
     <div className="max-w-[600px] mx-auto md:pl-10 md:pr-10 p-4 py-10 bg-gray-100 rounded-lg shadow-lg">
