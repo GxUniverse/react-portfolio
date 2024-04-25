@@ -30,11 +30,11 @@ const Header = () => {
             <span className="pl-4">Home</span>
           </a>
           <a
-            href="react-portfolio\react-portfolio\src\components\Projects.jsx"
+            href="#portfolio"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <GrProjects size={20} />
-            <span className="pl-4">Work</span>
+            <span className="pl-4">Portfolio</span>
           </a>
           <a
             href="#projects"

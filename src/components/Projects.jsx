@@ -31,7 +31,8 @@ const data = [
 
 const Projects = () => {
   return (
-    <div id='project' className='md:pl-20 p-4 py-16'>
+    <div id='projects' >
+      <div className='md:pl-20 p-4 py-16'>
       <div className="max-w-[1040px] m-auto relative">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
           <ellipse cx="50" cy="50" rx="50" ry="30" fill="#e4d5f7" />
@@ -60,6 +61,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

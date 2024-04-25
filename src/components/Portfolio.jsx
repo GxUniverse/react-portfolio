@@ -45,35 +45,37 @@ const Portfolio = () => {
   };
 
   return (
-    <div id='project' className='md:pl-20 p-4 py-16' style={{ backgroundColor: '#f3e5f5' }}>
-      <div className="max-w-[1040px] m-auto relative">
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-          <ellipse cx="50" cy="50" rx="50" ry="30" fill="#f3e5f5" />
-        </svg>
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          <div className="card bg-white rounded-lg p-4 mb-4" style={{ width: '100%' }}>
-            <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Portfolio</h1>
-          </div>
-          <div className="flex justify-between items-center">
-            <button onClick={goToPreviousSet} className="focus:outline-none border border-gray-300 rounded-lg p-2">
-              &lt;
-            </button>
-            <div className="flex flex-1 justify-center">
-              {data.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
-                <div key={index} className="card bg-white rounded-lg p-4 mb-4">
-                  <PortfolioItem
-                    year={item.year}
-                    title={item.title}
-                    details={item.details}
-                    link={item.link}
-                    image={item.image}
-                  />
-                </div>
-              ))}
+    <div id='portfolio'> {/* Changed the id from 'project' to 'portfolio' */}
+      <div className='md:pl-20 p-4 py-16' style={{ backgroundColor: '#f3e5f5' }}>
+        <div className="max-w-[1040px] m-auto relative">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+            <ellipse cx="50" cy="50" rx="50" ry="30" fill="#f3e5f5" />
+          </svg>
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <div className="card bg-white rounded-lg p-4 mb-4" style={{ width: '100%' }}>
+              <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Portfolio</h1>
             </div>
-            <button onClick={goToNextSet} className="focus:outline-none border border-gray-300 rounded-lg p-2">
-              &gt;
-            </button>
+            <div className="flex justify-between items-center">
+              <button onClick={goToPreviousSet} className="focus:outline-none border border-gray-300 rounded-lg p-2">
+                &lt;
+              </button>
+              <div className="flex flex-1 justify-center">
+                {data.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
+                  <div key={index} className="card bg-white rounded-lg p-4 mb-4">
+                    <PortfolioItem
+                      year={item.year}
+                      title={item.title}
+                      details={item.details}
+                      link={item.link}
+                      image={item.image}
+                    />
+                  </div>
+                ))}
+              </div>
+              <button onClick={goToNextSet} className="focus:outline-none border border-gray-300 rounded-lg p-2">
+                &gt;
+              </button>
+            </div>
           </div>
         </div>
       </div>
