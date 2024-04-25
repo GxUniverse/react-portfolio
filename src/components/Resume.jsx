@@ -32,6 +32,10 @@ function Resume() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-xl font-semibold mb-4 text-blue-500">Font-End Tech</p>
             <ul className="text-gray-700">
+            <li className="flex items-center mb-2">
+                <MdFoundation className="text-blue-500 mr-2" />
+                React
+              </li>
               <li className="flex items-center mb-2">
                 <MdFoundation className="text-blue-500 mr-2" />
                 HTML5
@@ -51,6 +55,10 @@ function Resume() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-xl font-semibold mb-4 text-green-500">Back-End Tech</p>
             <ul className="text-gray-700">
+            <li className="flex items-center mb-2">
+                <GrTechnology className="text-green-500 mr-2" />
+                MongoDB
+              </li>
               <li className="flex items-center mb-2">
                 <GrTechnology className="text-green-500 mr-2" />
                 Node.js
