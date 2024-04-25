@@ -11,6 +11,7 @@ import { AiFillProject } from "react-icons/ai"; // Importing project management 
 
 function Resume() {
   return (
+    <div id="resume">
     <div className="bg-gray-100 py-10">
       <section id="welcome-section" className="text-center">
         <h2 className="text-3xl font-bold mb-4 text-gray-800">My Resume</h2>
@@ -156,6 +157,7 @@ function Resume() {
           
         </div>
       </section>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectItem = ({ year, title, duration, details, link, showEventsLink, showCartoonLink, CartoonLink, showGraphicNovelLink, GraphicNovelLink, showARGameLink, ARGameLink }) => {
+const ProjectItem = ({ year, title, duration, details, link, password, showEventsLink, showCartoonLink, CartoonLink, showGraphicNovelLink, GraphicNovelLink, showARGameLink, ARGameLink }) => {
   return (
     <ol className='flex flex-col md:flex-row relative border-l border-stone-200'>
       <li className='mb-10 ml-4'>
@@ -16,9 +16,14 @@ const ProjectItem = ({ year, title, duration, details, link, showEventsLink, sho
 
         {/* Conditionally render links based on project */}
         {showEventsLink && <a href={link} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">View Events</a>}
-        {showCartoonLink && <a href={CartoonLink} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">View Cartoon Trailer</a>}
+        {showCartoonLink && (
+          <>
+            <a href={CartoonLink} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">View Cartoon Trailer</a>
+            <p className='text-sm  text-[#0015be]'>(Password: 1234) {password}</p>
+          </>
+        )}
         {showGraphicNovelLink && <a href={GraphicNovelLink} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">View Graphic Novel</a>}
-        {showARGameLink && <a href={ARGameLink} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">View AR Game</a>}
+        {showARGameLink && <a href={ARGameLink} className='text-blue-500 block mt-2' target="_blank" rel="noopener noreferrer">AR Game (Comming Soon)</a>}
       </li>
     </ol>
   )
