@@ -9,7 +9,7 @@ const data = [
     year: 'Movie Review Application',
     title: 'Lead Developer',
     details: 'Full-stack custom movie review application that allows you to see the review of any film from the IMDB database.',
-    link: 'https://hunterwilliam795.github.io/First-Project/', // Replace with actual image URL
+    link: 'https://hunterwilliam795.github.io/First-Project/',
     image: screenshot2Image
   },
   {
